@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 - Студент: [Darya Yankouskaya](https://up.htmlacademy.ru/htmlcss/28/user/1351337).
-- Наставник: `Елена Валеева`(https://htmlacademy.ru/profile/nikkie8).
+- Наставник: [Елена Валеева](https://htmlacademy.ru/profile/nikkie8).
 
 ---
 
