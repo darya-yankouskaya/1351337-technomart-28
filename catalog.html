@@ -91,6 +91,17 @@
             <h2>Фильтр:</h2>
             <form method="GET" action="https://echo.htmlacademy.ru">
                 <fieldset>
+                    <legend>Цена:</legend>
+                    <div> <!--  здесь будет toggle -->
+                        <div tabindex="0"></div>
+                        <div tabindex="0"></div>
+                    </div>
+                    <label for="min-price" class="visually-hidden">Минимальная цена</label>
+                    <input type="number" id="min-price" name="min-price" value="0" placeholder="0">
+                    <label for="max-price" class="visually-hidden">Максимальная цена</label>
+                    <input type="number" id="max-price" name="max-price" value="30000" placeholder="30000">
+                </fieldset>
+                <fieldset>
                     <legend>Производители:</legend>
                     <ul>
                         <li>
@@ -128,7 +139,7 @@
         </section>
 
         <section>
-            <h2>Сортировка</h2>
+            <h2>Сортировка:</h2>
             <ul>
                 <li>
                     <button type="button">По цене</button>
@@ -140,10 +151,10 @@
                     <button type="button">По функционалу</button>
                 </li>
                 <li>
-                    <button type="button">По возрастанию</button>
+                    <button type="button"><span class="visually-hidden">По возрастанию</span></button>
                 </li>
                 <li>
-                    <button type="button">По убыванию</button>
+                    <button type="button"><span class="visually-hidden">По убыванию</span></button>
                 </li>
             </ul>
         </section>
@@ -340,7 +351,7 @@
 
         <div>
             <p>
-                &copy; 2010-2019 Компания &laquo;Техномарт&raquo;<br>
+                &copy; 2010-2019 Компания &laquo;Техномарт&raquo;
                 Все права защищены
             </p>
 
