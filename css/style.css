@@ -283,7 +283,7 @@ a {
 }
 
 .footer-email:active {
-    background-color: var(--basic-red);
+    color: var(--basic-red);
 }
 
 
