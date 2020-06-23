@@ -11,57 +11,57 @@
 
 <body>
     <header class="header">
-        <div class="header-top normal-white-text">
+        <div class="header-top primary-color">
             <a class="logo">
                 <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип компании Техномарт">
             </a>
-            <form action="https://echo.htmlacademy.ru" method="POST" class="search-form">
-                <label for="search" class="visually-hidden">Поиск</label>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+                <label class="visually-hidden" for="search">Поиск</label>
                 <input type="search" id="search" name="search" placeholder="Поиск:">
             </form>
-            <a class="text-navigation bookmark" href="#"><span class="text">Закладки: 0</span></a>
-            <a class="text-navigation basket" href="#"><span class="text">Корзина: 0</span></a>
-            <a class="text-navigation order" href="#"><span class="text">Оформить заказ</span></a>
+            <a class="text-navigation bookmark" href="#">Закладки: 0</a>
+            <a class="text-navigation empty-basket" href="#">Корзина: 0</a>
+            <a class="text-navigation order" href="#">Оформить заказ</a>
         </div>
 
-        <h1 class="title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <h1 class="title small-size">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
         <div>
-            <a href="tel:+78125550555"><span class="header-phone-number">+7 (812) 555-05-55</span></a>
-            <p class="header-adress">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+            <a class="header-phone-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p class="header-address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
         </div>
 
         <ul class="authorization">
-            <li class="authorization-list list-item">
+            <li class="authorization-list">
                 <a href="#"><span class="authorization-name">Войти</span></a>
             </li>
-            <li class="authorization-list list-item">
+            <li class="authorization-list">
                 <a href="#"><span class="authorization-name">Регистрация</span></a>
             </li>
         </ul>
 
         <nav class="navigation">
             <ul class="navigation-list">
-                <li class="navigation-element list-item">
-                    <a href="#" class="navigation-link"><span class="navigation-value normal-white-text">Главная</span></a>
+                <li class="navigation-element">
+                    <a class="navigation-link primary-color" href="#">Главная</a>
                 </li>
-                <li class="navigation-element list-item">
-                    <a href="#" class="navigation-link"><span class="navigation-value normal-white-text">Компания</span></a>
+                <li class="navigation-element">
+                    <a class="navigation-link primary-color" href="#">Компания</a>
                 </li>
-                <li class="navigation-element list-item">
-                    <a href="catalog.html" class="navigation-link"><span class="navigation-value normal-white-text">Каталог</span></a>
+                <li class="navigation-element">
+                    <a class="navigation-link primary-color" href="catalog.html">Каталог</a>
                 </li>
-                <li class="navigation-element list-item">
-                    <a href="#" class="navigation-link"><span class="navigation-value normal-white-text">Новости</span></a>
+                <li class="navigation-element">
+                    <a class="navigation-link primary-color" href="#">Новости</a>
                 </li>
-                <li class="navigation-element list-item">
-                    <a href="#" class="navigation-link"><span class="navigation-value normal-white-text">Спецпредложения</span></a>
+                <li class="navigation-element">
+                    <a class="navigation-link primary-color" href="#">Спецпредложения</a>
                 </li>
-                <li class="navigation-element list-item">
-                    <a href="#" class="navigation-link"><span class="navigation-value normal-white-text">Доставка</span></a>
+                <li class="navigation-element">
+                    <a class="navigation-link primary-color" href="#">Доставка</a>
                 </li>
-                <li class="navigation-element list-item">
-                    <a href="#" class="navigation-link"><span class="navigation-value normal-white-text">Контакты</span></a>
+                <li class="navigation-element">
+                    <a class="navigation-link primary-color" href="#">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -272,7 +272,7 @@
         </section>
 
         <section>
-            <h2 class="subtitle black-subtitle">Компания &laquo;Техномарт&raquo;</h2>
+            <h2 class="subtitle">Компания &laquo;Техномарт&raquo;</h2>
             <p class="about-company-text">
                 Настоящий мужской шоппинг начинается здесь! Огромный выбор
                 товаров для ремонта и строительства не оставит равнодушными любителей
@@ -283,15 +283,15 @@
                 Техномарт работает со многими транспортными компаниями:
             </p>
             <ul class="transport-company-list">
-                <li class="transport-company-element list-item">Деловые линии</li>
-                <li class="transport-company-element list-item">Автотрейдинг</li>
-                <li class="transport-company-element list-item">ЖелДорЭкспедиция</li>
+                <li class="transport-company-element">Деловые линии</li>
+                <li class="transport-company-element">Автотрейдинг</li>
+                <li class="transport-company-element">ЖелДорЭкспедиция</li>
             </ul>
-            <a href="#" class="red-link about-link"><span>Подробнее о компании</span></a>
+            <a class="button primary about-link" href="#">Подробнее о компании</a>
         </section>
 
         <section>
-            <h2 class="subtitle black-subtitle">Контакты</h2>
+            <h2 class="subtitle">Контакты</h2>
             <p class="about-company-text">
                 Вы можете забрать товар сами,
                 заехав в наш офис:
@@ -300,7 +300,7 @@
                 <img src="img/map.png" width="300" height="158"
                 alt="Офис компании техномарт по адресу г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
             </a>
-            <a href="#" class="red-link contact-link"><span>Заблудились? Напишите нам!</span></a>
+            <a class="button primary contact-link" href="#">Заблудились? Напишите нам!</a>
         </section>
     </main>
 
@@ -313,75 +313,75 @@
 
                 <p class="footer-contacts">
                     г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>
-                    <a href="tel:+78125550555"><span class="footer-contacts">+7 (812) 555-05-55</span></a>
+                    <a class="footer-contacts" href="tel:+78125550555">+7 (812) 555-05-55</a>
                 </p>
             </div>
 
             <ul class="footer-navigation">
-                <li class="footer-navigation-element list-item">
-                    <a href="#"><span class="page-nav-text">Компания</span></a>
+                <li class="footer-navigation-element">
+                    <a class="page-nav-text" href="#">Компания</a>
                 </li>
-                <li class="footer-navigation-element list-item">
-                    <a href="#"><span class="page-nav-text">Новости</span></a>
+                <li class="footer-navigation-element">
+                    <a class="page-nav-text" href="#">Новости</a>
                 </li>
-                <li class="footer-navigation-element list-item">
-                    <a href="catalog.html"><span class="page-nav-text">Каталог</span></a>
+                <li class="footer-navigation-element">
+                    <a class="page-nav-text" href="catalog.html">Каталог</a>
                 </li>
-                <li class="footer-navigation-element list-item">
-                    <a href="#"><span class="page-nav-text">Доставка</span></a>
+                <li class="footer-navigation-element">
+                    <a class="page-nav-text" href="#">Доставка</a>
                 </li>
-                <li class="footer-navigation-element list-item">
-                    <a href="#"><span class="page-nav-text">Контакты</span></a>
+                <li class="footer-navigation-element">
+                    <a class="page-nav-text" href="#">Контакты</a>
                 </li>
             </ul>
 
             <ul class="footer-navigation">
-                <li class="footer-navigation-element list-item">
-                    <a href="#"><span class="catalog-nav-text">Материалы</span></a>
+                <li class="footer-navigation-element">
+                    <a class="catalog-nav-text secondary-color" href="#">Материалы</a>
                 </li>
-                <li class="footer-navigation-element list-item">
-                    <a href="#"><span class="catalog-nav-text">Техника</span></a>
+                <li class="footer-navigation-element">
+                    <a class="catalog-nav-text secondary-color" href="#">Техника</a>
                 </li>
-                <li class="footer-navigation-element list-item">
-                    <a href="#"><span class="catalog-nav-text">Инструмент</span></a>
+                <li class="footer-navigation-element">
+                    <a class="catalog-nav-text secondary-color" href="#">Инструмент</a>
                 </li>
-                <li class="footer-navigation-element list-item">
-                    <a href="#"><span class="catalog-nav-text">Спецпредложения</span></a>
+                <li class="footer-navigation-element">
+                    <a class="catalog-nav-text secondary-color" href="#">Спецпредложения</a>
                 </li>
             </ul>
         </div>
 
         <div class="footer-bottom">
-            <p class="small-white-text">
+            <p class="primary-color small-size">
                 &copy; 2010-2019 Компания &laquo;Техномарт&raquo;
                 Все права защищены
             </p>
 
             <ul class="networks-list">
-                <li class="networks-list-element list-item">
+                <li class="networks-list-element">
                     <a href="#"><span class="visually-hidden">Вконтакте</span></a>
                 </li>
-                <li class="networks-list-element list-item">
+                <li class="networks-list-element">
                     <a href="#"><span class="visually-hidden">Фейсбук</span></a>
                 </li>
-                <li class="networks-list-element list-item">
+                <li class="networks-list-element">
                     <a href="#"><span class="visually-hidden">Инстаграм</span></a>
                 </li>
             </ul>
 
-            <p class="small-white-text">
+            <p class="primary-color small-size">
                 Обратная связь:<br>
-                <a href="mailto:mail@htmlacademy.ru"><span class="small-yellow-text footer-email">mail@htmlacademy.ru</span></a>
+                <a class="secondary-color small-size" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
 
-            <p class="small-white-text">
+            <p class="primary-color small-size">
                 Разработано -<br>
-                <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="small-yellow-text footer-email">htmlacademy.ru</span></a>
+                <a class="secondary-color small-size" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
         </div>
     </footer>
     <!-- popup map -->
-    <section style="display: none;">
+    <section class="no-display">
         <h3 class="visually-hidden">Подробная карта</h3>
         <a href="https://www.google.com/maps">
             <img src="img/big-map.png" width="943" height="449"
@@ -391,7 +391,7 @@
     </section>
 
     <!-- форма обратной связи -->
-    <section style="display: none;">
+    <section class="no-display">
         <h3 class="visually-hidden">Форма обратной связи</h3>
         <form action="https://echo.htmlacademy.ru" method="POST">
             <label for="feedback-username">Ваше имя:</label>
