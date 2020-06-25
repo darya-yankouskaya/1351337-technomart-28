@@ -35,7 +35,7 @@
     /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
-  }
+}
 
 body {
     min-width: 960px;
@@ -52,29 +52,14 @@ a {
     text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
-}
-
-.no-display {
+.modal {
     display: none;
-}
-
-.small-size {
-    font-size: 16px;
-}
-
-.primary-color {
-    color: var(--basic-white);
-}
-
-.secondary-color {
-    color: var(--special-orangeyellow);
 }
 
 .title {
     color: var(--basic-red);
     font-style: italic;
+    font-size: 16px;
 }
 
 .subtitle {
@@ -85,16 +70,13 @@ ul {
     font-weight: normal;
 }
 
-.button {
+.primary-button {
     display: inline-block;
     line-height: 38px;
     font-size: 14px;
     text-transform: uppercase;
     vertical-align: middle;
     text-align: center;
-}
-
-.button.primary {
     background-color: var(--basic-red);
     color: var(--basic-white);
 }
@@ -109,9 +91,10 @@ ul {
     height: 42px;
     background-color: var(--basic-blue-dark);
     display: flex;
+    color: var(--basic-white);
 }
 
-.text-navigation {
+.header-top-navigation {
     font-family: var(--font-primary);
     color: var(--basic-white);
     text-align: center;
@@ -120,33 +103,33 @@ ul {
     line-height: 42px;
 }
 
-.text-navigation.order {
+.header-top-navigation.order {
     width: 150px;
     background-color: var(--basic-light-green);
 
 }
 
-.text-navigation.order:active {
+.header-top-navigation.order:active {
     background-color: var(--basic-green);
     color: var(--navigation-active-color);
 }
 
-.text-navigation.empty-basket,
-.text-navigation.not-empty-basket {
+.header-top-navigation.empty-basket,
+.header-top-navigation.not-empty-basket {
     width: 136px;
 }
 
-.text-navigation.bookmark:active,
-.text-navigation.empty-basket:active {
+.header-top-navigation.bookmark:active,
+.header-top-navigation.empty-basket:active {
     background-color: var(--navigation-active-bgr);
     color: var(--navigation-active-color);
 }
 
-.text-navigation.not-empty-basket {
+.header-top-navigation.not-empty-basket {
     background-color: var(--basic-red);
 }
 
-.text-navigation.not-empty-basket:active {
+.header-top-navigation.not-empty-basket:active {
     color: var(--navigation-active-color);
 }
 
@@ -186,60 +169,80 @@ ul {
     color: var(--basic-blue);
 }
 
-.authorization-name {
+.authorization-list {
+    list-style-type: none;
+}
+
+.authorization-list a {
     color: var(--basic-black);
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     line-height: 21px;
 }
 
-.authorization-name:hover,
-.username-features:hover {
+.username-features-list {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.username-features-list a {
+    color: var(--basic-blue);
+}
+
+.authorization-list a:hover,
+.username-features-list a:hover {
     color: var(--basic-red);
 }
 
-.authorization-name:active,
-.username-features:active,
+.authorization-list a:active,
+.username-features-list a:active,
 .username:active {
     color: var(--basic-greylight);
 }
 
-.navigation {
-    width: 960px;
-    height: 60px;
+.navigation-list {
     background-color: var(--basic-blue);
     box-shadow: inset 0px -5px 0px var(--basic-blue-dark);
-}
-
-.navigation-list {
     display: flex;
+    list-style-type: none;
+    line-height: 60px;
 }
 
-.navigation-element:hover {
+.navigation-list li:hover {
     background-color: var(--basic-blue-dark);
 }
 
-.navigation-element:active {
+.navigation-list li:active {
     opacity: 0.5;
+}
+
+.navigation-list a {
+    color: var(--basic-white);
 }
 
 .about-company-text {
     font-size: 13px;
 }
 
-.transport-company-element {
-    font-family: Cuprum;
+.transport-company-list {
+    list-style-type: none;
+    font-family: "Cuprum", Arial, sans-serif;
 }
 
-.about-link {
+.transport-company-element {
+    font-family: "Cuprum", Arial, sans-serif;
+}
+
+.about-button {
     width: 220px;
 }
 
-.contact-link {
+.contact-button {
     width: 300px;
 }
 
 .footer {
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
 }
 
 .footer-logo {
@@ -258,36 +261,54 @@ ul {
     background-color: var(--basic-blue-dark);
 }
 
-.footer-navigation {
-    display: flex;
-}
-
-.page-nav-text {
-    color: var(--basic-light-grey);
-}
-
-.footer-contacts {
+.footer-contacts,
+.footer-contacts a {
     color: var(--special-grey);
 }
 
-.page-nav-text:hover,
-.catalog-nav-text:hover,
+.footer-page-navigation,
+.footer-catalog-navigation {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-page-navigation a {
+    color: var(--basic-light-grey);
+}
+
+.footer-catalog-navigation a {
+    color: var(--special-orangeyellow);
+}
+
+.footer-page-navigation a:hover,
+.footer-catalog-navigation a:hover,
 .footer-email {
     text-decoration-line: underline;
 }
 
-.page-nav-text:active,
-.catalog-nav-text:active {
+.footer-page-navigation a:active,
+.footer-catalog-navigation a:active {
     mix-blend-mode: normal;
     opacity: 0.5;
  }
 
-.networks-list {
-    display: flex;
-}
-
 .footer-email:active {
     color: var(--basic-red);
+}
+
+.copyright-text,
+.footer-info-text {
+    font-size: 16px;
+    color: var(--basic-white);
+}
+
+.footer-info-text a {
+    color: var(--special-orangeyellow);
+}
+
+.networks-list {
+    display: flex;
+    list-style-type: none;
 }
 
 /* catalog */
@@ -302,11 +323,19 @@ ul {
     color: var(--basic-blue);
 }
 
-.catalog-path {
+.breadcrumbs {
+    list-style-type: none;
+}
+
+.breadcrumbs li {
     font-size: 13px;
     line-height: 18px;
     color: var(--basic-black);
     text-transform: uppercase;
+}
+
+.breadcrumbs a {
+    color: inherit;
 }
 
 .catalog-title-wrapper {
@@ -328,13 +357,17 @@ ul {
     text-transform: uppercase;
 }
 
-.filter-name {
+.filter-list {
+    list-style-type: none;
     font-size: 15px;
     line-height: 19px;
+}
+
+.filter-list label {
     text-transform: uppercase;
 }
 
-.show-button {
+.filter-show-button {
     width: 220px;
     height: 38px;
     background-color: var(--basic-white);
@@ -346,37 +379,35 @@ ul {
     text-transform: uppercase;
 }
 
-.catalog-item .catalog-item-navigation,
-.catalog-item:hover img {
-    display: none;
-}
-
-.catalog-item:hover .catalog-item-navigation {
-    display: block;
-}
-
 .catalog-item:hover {
     box-shadow: 0px 4px 20px var(--special-catalog-item-shadow);
 }
 
-.catalog-item-title {
+.catalog-item h3 {
     font-weight: bold;
+    font-size: inherit;
     line-height: 20px;
 }
 
-.catalog-item-price {
+.catalog-item .old-price,
+.catalog-item .new-price {
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
 }
 
-.old-price {
+.catalog-item .old-price {
     text-decoration-line: line-through;
     text-transform: uppercase;
     color: var(--special-old-price);
 }
 
-.catalog-item-button {
+.catalog-item .new-price {
+    color: var(--basic-white);
+}
+
+.catalog-item .buy-button,
+.catalog-item .bookmark-button {
     border-radius: 2px;
     text-transform: uppercase;
     display: inline-block;
@@ -386,31 +417,43 @@ ul {
     width: 135px;
 }
 
-.buy-button {
+.catalog-item .buy-button {
     background-color: var(--basic-green);
     box-shadow: inset 0px -3px 0px var(--special-dark-green-border);
     color: var(--basic-white);
     line-height: 38px;
 }
 
-.buy-button:hover {
+.catalog-item .buy-button:hover {
     background-color: var(--buy-btn-hover);
 }
 
-.buy-button:active {
+.catalog-item .buy-button:active {
     background-color: var(--buy-btn-active);
 }
 
-.bookmark-button {
+.catalog-item .bookmark-button {
     border: 3px solid var(--basic-green);
     color: var(--basic-blue);
     line-height: 32px;
 }
 
-.bookmark-button:hover {
+.catalog-item .bookmark-button:hover {
     border: 3px solid var(--basic-blue);;
 }
 
-.bookmark-button:active {
+.catalog-item .bookmark-button:active {
     opacity: 0.5;
+}
+
+.catalog-new-item {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+}
+
+.catalog-new-item span {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
