@@ -2,22 +2,26 @@
     --basic-white: #FFFFFF;
     --basic-black: #000000;
     --basic-blue-dark: #293449;
+    --basic-blue-light: #3BBCE3;
     --basic-blue: #32425C;
     --basic-red: #EE3643;
     --basic-green: #63A63E;
     --basic-light-green: #5FBB2D;
     --basic-gray: F3F7F9;
     --basic-light-grey: #F1F5F7;
-
+    --basic-orange: #FFBF47;
     --basic-greylight: #C5C5C5;
+    --basic-beige: #F7F3EC;
+    --basic-beige-light: #F9F5F0;
+    --basic-dark-grey: #A9A9A9;
+    --basic-burgundy: #BA2732;
 
     --special-orangeyellow: #FFD180;
     --special-grey: #F3F7F9;
     --special-light-blue: #F2F6F8;
     --special-button-border: #E5E5E5;
-    --special-old-price: #A9A9A9;
     --special-dark-green-border: #367315;
-    --special-catalog-item-shadow: rgba(0, 0, 0, 0.15);
+    --special-box-shadow: rgba(0, 0, 0, 0.15);
 
     --logo-shadow: rgba(0, 0, 0, 0.24);
     --navigation-active-bgr: #161D29;
@@ -25,6 +29,11 @@
     --buy-btn-hover: #5FBB2D;
     --buy-btn-active: #518534;
     --logo-active: #BA2732;
+    --sales-bgr: #8ED78F;
+    --equipment-bgr: #DC91D8;
+    --main-bgr: #888888;
+    --partners-border: #EAEAEA;
+    --desaturated-blue: #405069;
 }
 
 .visually-hidden {
@@ -69,6 +78,11 @@ a {
     line-height: 30px;
     text-transform: uppercase;
     font-weight: normal;
+}
+
+.subtitle.secondary {
+    color: var(--basic-blue);
+    background-color: var(--basic-beige-light);
 }
 
 .primary-button {
@@ -218,6 +232,142 @@ a {
     color: var(--basic-white);
 }
 
+.company-offers {
+    color: var(--basic-white);
+    font-family: "Cuprum", Arial, sans-serif;
+}
+
+.offer-list,
+.slider-list {
+    list-style-type: none;
+}
+
+.offer-list a {
+    color: inherit;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    opacity: 0.3;
+}
+
+.offer-list a:hover {
+    background-color: var(--basic-greylight);
+}
+
+.offer-list a:active {
+    background-color: var(--basic-dark-grey);
+}
+
+.offer-list h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.materials,
+.delivery {
+    background-color: var(--basic-orange);
+}
+
+.instrument {
+    background-color: var(--basic-blue-light);
+}
+
+.equipment {
+    background-color: var(--equipment-bgr);
+}
+
+.sales {
+    background-color: var(--sales-bgr);
+}
+
+.slider-list h3 {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.slider-list .primary-button:active {
+    background-color: var(--basic-burgundy);
+}
+
+.puncher-card {
+    background-image: url(../img/purchers.jpg);
+    background-repeat: no-repeat;
+}
+
+.drills-card {
+    background-image: url(../img/drills.jpg);
+    background-repeat: no-repeat;
+}
+
+.popular-products-list,
+.partners-list,
+.services-list{
+    list-style-type: none;
+}
+
+.partners-list li {
+    border: 1px solid var(--partners-border);
+    box-sizing: border-box;
+}
+
+.partners-list li:hover,
+.partners-list li:active {
+    box-shadow: 0px 4px 20px var(--special-box-shadow);
+}
+
+.partners-list li:active {
+    opacity: 0.5;
+}
+
+.services-text {
+    font-size: 13px;
+}
+
+.services-list button {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+    border: none;
+    box-shadow: 0px 1px 0px var(--basic-blue-dark), inset 0px 1px 0px var(--desaturated-blue);
+}
+
+.services-list button:not(.active):hover {
+    background-color: var(--basic-blue-dark);
+}
+
+.services-list .active {
+    background-color: var(--basic-white);
+    color: var(--basic-blue);
+}
+
+.service-types h3 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: var(--basic-blue);
+    text-transform: uppercase;
+}
+
+.service-types section {
+    background-repeat: no-repeat;
+}
+
+.service-types p {
+    font-size: 13px;
+}
+
+.delivery-service{
+    background-image: url(../img/delivery.png);
+}
+
+.quarantee-service {
+    background-image: url(../img/guarantee.png);
+}
+
+.credit-service {
+    background-image: url(../img/credit.png);
+}
+
 .about-company-text {
     font-size: 13px;
 }
@@ -354,6 +504,28 @@ a {
     text-transform: uppercase;
 }
 
+.filter-managing {
+    background-color: var(--basic-beige);
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.filter-managing ul {
+    list-style-type: none;
+}
+
+.filter-managing a {
+    color: inherit;
+    opacity: 0.3;
+}
+
+.filter-managing .active {
+    color: var(--basic-red);
+    opacity: 1;
+}
+
 .filter-legend {
     font-weight: bold;
     font-size: 17px;
@@ -382,11 +554,26 @@ a {
     text-transform: uppercase;
 }
 
-.catalog-item:hover {
-    box-shadow: 0px 4px 20px var(--special-catalog-item-shadow);
+.price-range {
+    background-color: var(--basic-beige);
 }
 
-.catalog-item h3 {
+.price-input {
+    background-color: var(--basic-beige);
+    border: none;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.products-list {
+    list-style-type: none;
+}
+
+.product-item:hover {
+    box-shadow: 0px 4px 20px var(--special-box-shadow);
+}
+
+.product-item h3 {
     font-weight: bold;
     font-size: inherit;
     line-height: 20px;
@@ -402,7 +589,7 @@ a {
 .old-price {
     text-decoration-line: line-through;
     text-transform: uppercase;
-    color: var(--special-old-price);
+    color: var(--basic-dark-grey);
 }
 
 .new-price {
@@ -457,4 +644,39 @@ a {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+}
+
+.paging-list {
+    list-style-type: none;
+}
+
+.paging-list a {
+    font-size: 13px;
+    color: inherit;
+    background-color: var(--basic-white);
+    border: 1px solid var(--special-button-border);
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.paging-list a:hover {
+    border: 1px solid var(--basic-greylight);
+}
+
+.paging-list a:active {
+    border: 1px solid var(--basic-red);
+}
+
+.paging-list .active {
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.about-product {
+    background-color: var(--basic-light-grey);
+}
+
+.about-product p {
+    font-size: 13px;
 }
