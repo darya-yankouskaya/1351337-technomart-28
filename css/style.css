@@ -34,10 +34,11 @@
     --main-bgr: #888888;
     --grey-border: #EAEAEA;
     --desaturated-blue: #405069;
-    --features-bgr: rgba(0, 0, 0, 0.0001);
     --banner-bgr: rgba(255, 255, 255, 0.3);
     --banner-hover-bgr: rgba(197, 197, 197, 0.3);
     --banner-active-bgr: rgba(169, 169, 169, 0.3);
+    --filter-managing-color: rgba(0, 0, 0, 0.3);
+    --primary-btn-hover-bgr: #CA2C37;
 }
 
 .visually-hidden {
@@ -98,6 +99,10 @@ a {
     text-align: center;
     background-color: var(--basic-red);
     color: var(--basic-white);
+}
+
+.primary-button:hover {
+    background-color: var(--primary-btn-hover-bgr);
 }
 
 .primary-button:active {
@@ -197,7 +202,7 @@ a {
 
 .authorization-list li,
 .username {
-    background-color: var(--features-bgr);
+    background-color: var(--basic-white);
 }
 
 .authorization-list a {
@@ -339,6 +344,8 @@ a {
     border: none;
     box-shadow: 0px 1px 0px var(--basic-blue-dark), inset 0px 1px 0px var(--desaturated-blue);
     font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 30px;
 }
 
 .services-list button:not(.active):hover {
@@ -353,7 +360,8 @@ a {
 
 .service-types h3 {
     font-family: "Cuprum", Arial, sans-serif;
-    font-size: 21px;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: normal;
     color: var(--basic-blue);
     text-transform: uppercase;
@@ -510,9 +518,10 @@ a {
 }
 
 .catalog-title {
-    font-size: 13px;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: "Cuprum", Arial, sans-serif;
     font-weight: normal;
-    line-height: 18px;
     text-transform: uppercase;
 }
 
@@ -535,13 +544,13 @@ a {
 }
 
 .filter-managing a {
-    color: inherit;
-    opacity: 0.3;
+    color: var(--filter-managing-color);
     border-bottom: 1px dotted var(--basic-red);
 }
 
 .filter-managing a:not(.active):hover {
     border-bottom: 1px solid var(--basic-red);
+    color: var(--basic-black);
     opacity: 1;
 }
 
@@ -690,7 +699,7 @@ a {
     border-radius: 2px;
 }
 
-.paging-list a:not(.active):hover {
+.paging-list a:hover {
     border: 1px solid var(--basic-greylight);
 }
 
@@ -698,7 +707,7 @@ a {
     border: 1px solid var(--basic-red);
 }
 
-.paging-list .active {
+.paging-list a:not([href]) {
     color: var(--basic-white);
     background-color: var(--basic-red);
     border: 1px solid var(--basic-red);
